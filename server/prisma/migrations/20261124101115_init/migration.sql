@@ -6,7 +6,8 @@ CREATE TABLE "Task" (
     "status" TEXT NOT NULL DEFAULT 'TODO',
     "priority" TEXT NOT NULL DEFAULT 'MEDIUM',
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "updatedAt" DATETIME NOT NULL
+    "updatedAt" DATETIME NOT NULL,
+    "version" INTEGER NOT NULL DEFAULT 0
 );
 
 -- CreateTable
